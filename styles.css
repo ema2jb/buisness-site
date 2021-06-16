@@ -1,0 +1,169 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+
+body{
+    font-family: Helvetica, sans-serif;
+    width:100%;
+}
+
+
+header{
+    display:flex;
+    position:fixed;
+    top:0;
+    width:100%;
+    background-color:white;
+}
+.icon{
+    display:flex;
+    border-bottom:1px solid grey;
+    align-items: center;
+    padding: 0 0.7rem;
+    width:100%;
+    flex-wrap:wrap;
+}
+
+.icon h1{
+    flex-grow:1;
+}
+
+
+li{
+    display: inline-flex;
+    margin:0.7rem;
+}
+
+main{
+    z-index:10;
+    margin-top:5.3rem;
+}
+
+.banner{
+    display:flex;
+    align-items: center;
+    height:34rem;
+    background-image: url('images/banner-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.mission{
+    background-color:white;
+    text-align:center;
+    width:100%;
+}
+
+
+.product-items{
+    display:flex;
+    width:100%;
+    align-items: baseline;
+    text-align:center;
+    flex-wrap:wrap;
+    justify-content: center;
+    padding:30px;
+}
+
+.product{
+    width:300px;
+    height:300px;
+    margin-right:20px;
+}
+.product img{
+    width:100%;
+}
+
+.products{
+    text-align:center;
+    background-image: url('./images/product-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:bottom;
+    color:white;
+    height: auto;
+    padding: 20px;
+}
+
+@media  (max-width:500px){
+
+    header{
+        position:fixed;
+        top:0;
+        width:100%;
+        background-color:white;
+        text-align:center;
+    
+    }
+
+    .icon{
+        border-bottom:1px solid grey;
+        align-items: center;
+        padding: 0 0.7rem;
+        width:100%;
+        text-align:center;
+    }
+    
+    .icon h1{
+        flex-grow:0;
+        text-align:center;
+    }
+
+    li{
+        display: inline-block;
+        margin:0.7rem;
+        font-size: 1rem;
+    }
+
+    body{
+        font-family: Helvetica, sans-serif;
+    }
+
+
+    .product-items{
+        display:flex;
+        width:100%;
+        align-items: baseline;
+        text-align:center;
+        flex-flow:column;
+    }
+    
+    .product img{
+        width:100%;
+    }
+}
+
+.experts{
+    text-align:center;
+    background-image: url('./images/expert-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:bottom;
+    color:black;
+    padding: 20px;
+    overflow:hidden;
+}
+
+.the-expert{
+    display:flex;
+    align-items: baseline;
+    width:100%;
+    text-align: center;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.expert{
+    width:300px;
+    height:300px;
+    margin-right:20px;
+}
+.expert img{
+    width:100%;
+}
